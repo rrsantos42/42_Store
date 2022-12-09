@@ -1,24 +1,33 @@
 import Item from "./Item/Item";
 import styles from "./Items.module.css";
 import { useState, useEffect } from "react";
-const Items = (props) => {
-  // const [products, setProducts] = useState([]);
+import axios from "axios";
 
-  // useEffect(() => {
-  //   fetch("https://store-test-c9b34-default-rtdb.firebaseio.com")
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((data) => {
-  //       setProducts(data);
-  //     });
-  // });
+const Items = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState("Loading");
+
+  const productsUrl =
+    "https://store-test-c9b34-default-rtdb.firebaseio.com/.json";
+
+  useEffect(() => {
+    console.log("USE_EF");
+
+    const getProducts = async () => {
+      setProducts((await axios(productsUrl)).data.Products);
+      setLoading("");
+    };
+
+    getProducts();
+  },[]);
 
   return (
     <div className={styles.Productcontainer}>
-      {/* {props.product.map((product) => (
-        <Item product={product} key={product.id} />
-      ))} */}
+      {loading ? (
+        <p>{loading}</p>
+      ) : (
+        products.map((product) => <Item product={product} key={product.id} />)
+      )}
     </div>
   );
 };

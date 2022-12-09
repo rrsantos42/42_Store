@@ -1,0 +1,16 @@
+[
+  {
+    "Available": 0,
+    "Size": ["S", "M", "L", "XL"],
+    "id": 1,
+    "price": "20,00",
+    "type": "Sweat Shirt"
+  },
+  {
+    "Available": 1,
+    "Size": ["S", "M", "L", "XL"],
+    "id": 2,
+    "price": "15,00",
+    "type": "T-Xhirt"
+  }
+]

@@ -1,16 +1,13 @@
-import img from "../../../../public/imgs/sweat.png"
+import Image from "next/image"
 import styles from "./Item.module.css"
 
 
 const Item = (props) => {
 
-	const history = useHistory();
 	return(
-		<button className={styles.productbtns} onClick={() => 
-			history.push('/42Store/product')}
-			>
+		<button className={styles.productbtns}>
 			<div className={styles.productcontainer}>
-				<img src={img} alt="Product" className={styles.productimg}></img>
+				<Image src="/sweat.png" alt="Product" className={styles.productimg} width="220" height="280" />
 				<p>{props.product.type}</p>
 				<p className={styles.price}>{props.product.price} €</p>
 
