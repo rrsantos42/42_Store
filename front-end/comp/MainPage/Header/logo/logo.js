@@ -1,8 +1,8 @@
-import Mylogo from "../../../../public/imgs/logo.png"
+import Image from "next/image"
 import styles from "./logo.module.css"
 const Logo = () =>{
 	return(
-		<img src={Mylogo} className={styles.logoimg} alt="logo"></img>
+		<Image src="/logo.png" className={styles.logoimg} alt="logo" width= "300" height="100"></Image>
 	);
 }
 export default Logo
