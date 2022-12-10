@@ -6,7 +6,11 @@ import {useRouter} from "next/router";
 
 const Description = (props) =>{
 	const router = useRouter();	
-	let SelectedProduct = (props.product[(router.query.id) - 1]);
+	let i = 0;
+	for(; props.product[i].type != router.query.productSelected; i++);
+
+	let SelectedProduct = props.product[i];
+	
 	return(
 		<div className={styles.descriptionContainer}>
 			<h2 className={styles.header}>{SelectedProduct.type}</h2>

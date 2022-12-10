@@ -8,7 +8,8 @@ const Item = (props) => {
   const productHandler = () => {
     router.push({
       pathname: "/[id]",
-      query: { id: props.product.id},
+      query: {id: props.product.id,
+				productSelected: props.product.type},
     });
   };
   return (
