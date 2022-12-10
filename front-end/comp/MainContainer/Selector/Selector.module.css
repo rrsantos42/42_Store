@@ -1,0 +1,35 @@
+.Ul {
+	padding: 0;
+	margin: 0;
+	clear: both;
+  }
+  
+.Li{
+	list-style-type: none;
+	list-style-position: outside;
+	padding: 10px;
+	float: left;
+  }
+  
+.Input[type="checkbox"]:not(:checked), 
+
+.Input[type="checkbox"]:checked {
+	position: absolute;
+	left: -9999%;
+  }
+  
+.Input[type="checkbox"] + label {
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+	border: 1px solid black;
+	color: black;
+	background-color: white;
+	margin-bottom: 10px;
+  }
+  
+.Input[type="checkbox"]:checked + label {
+	border: 1px solid white;
+	color: white;
+	background-color: black;
+  }
