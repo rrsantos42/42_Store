@@ -4,9 +4,10 @@
 
 .descriptionContainer{
 	display: flex;
+	margin-top: 0%;
 	flex-direction: column;
 	gap: 4px;
-	width: 40%;
+	width: 30%;
 }
 
 .description{

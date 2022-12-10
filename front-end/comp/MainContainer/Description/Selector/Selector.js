@@ -19,7 +19,7 @@ const Selector = (props) => {
           <label for="check_1">S</label>
         </li>
         <li className={styles.Li}>
-          <inpu
+          <input
             className={styles.Input}
             t
             type="checkbox"
@@ -30,7 +30,7 @@ const Selector = (props) => {
           <label for="check_2">M</label>
         </li>
         <li className={styles.Li}>
-          <inpu
+          <input
             className={styles.Input}
             t
             type="checkbox"
@@ -41,7 +41,7 @@ const Selector = (props) => {
           <label for="check_3">L</label>
         </li>
         <li className={styles.Li}>
-          <inpu
+          <input
             className={styles.Input}
             t
             type="checkbox"

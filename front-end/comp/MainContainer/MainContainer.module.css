@@ -1,7 +1,8 @@
 .mainContainer{
+	margin-top: 5%;
 	display: flex;
 	align-items: center;
 	justify-items: center;
 	flex-wrap: wrap;
-	gap: 60px;
+	gap: 100px;
 }

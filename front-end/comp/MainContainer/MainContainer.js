@@ -22,9 +22,9 @@ const MainContainer = () =>{
       getProduct();
     },[]);
 	return(
-		<div className={styles.mainContainer}>
+		<div>
 			{loading ? (<p>{loading}</p>) :
-			<div>
+			<div className={styles.mainContainer}>
 			<ProductImg/>
 			<Description product={product}/>
 			</div>

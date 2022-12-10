@@ -1,5 +1,5 @@
 import styles from "./Description.module.css";
-import Selector from "../Selector/Selector";
+import Selector from "./Selector/Selector";
 import QuantitySelection from "./QuantitySelection/QuantitySelection";
 import AddToCart from "./AddToCart/AddToCart";
 import { useRouter } from "next/router";
@@ -13,7 +13,7 @@ const Description = (props) => {
 
   return (
     <div className={styles.descriptionContainer}>
-      <h2 className={styles.header}>{SelectedProduct.price}</h2>
+      <h2 className={styles.header}>{SelectedProduct.type}</h2>
       <p className={styles.description}>{SelectedProduct.descreption}</p>
       <p className={styles.price__description}>{SelectedProduct.price}$</p>
       <Selector />
