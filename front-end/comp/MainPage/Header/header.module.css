@@ -1,0 +1,7 @@
+.navcontainer{
+	display: flex;
+	justify-items: flex-end;
+	align-items: center;
+	gap: 10px;
+	background-color:#1eb9ba;
+}
