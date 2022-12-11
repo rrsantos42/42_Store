@@ -1,0 +1,34 @@
+.sizesSelector{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	gap: 8px;
+}
+.sizeClicked{
+	width: 40px;
+	height: 40px;
+	border: 2px;
+	border-style: solid	;
+	border-color: rgb(0, 255, 208);
+	background-color: white;
+}
+
+
+.sizeNotClicked{
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border: 0px;
+}
+
+.paragrafcont{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+.paragraf{
+	margin-top: 8px;
+	margin-left: 8px;
+	text-align: center;
+}

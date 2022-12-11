@@ -1,24 +1,27 @@
 .header{
 	margin-bottom: 0px;
+	font-size: 40px;
 }
 
 .descriptionContainer{
 	display: flex;
+	margin-top: 0%;
 	flex-direction: column;
 	gap: 4px;
-	width: 40%;
+	width: 30%;
 }
 
 .description{
 	width: 50%;
 	font-family: f;
 	margin-top: 0px;
-	margin-bottom: 15%;
+	margin-bottom: 5%;
 	padding-top: 0px;
 
 }
 
 .price__description{
-
-	margin-left: 10px;
+	font-size: 30px;
+	font-family: f;
+	margin-top: 0px;
 }
