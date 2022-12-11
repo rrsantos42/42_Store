@@ -1,5 +1,6 @@
 .header{
 	margin-bottom: 0px;
+	font-size: 40px;
 }
 
 .descriptionContainer{
@@ -14,12 +15,13 @@
 	width: 50%;
 	font-family: f;
 	margin-top: 0px;
-	margin-bottom: 15%;
+	margin-bottom: 5%;
 	padding-top: 0px;
 
 }
 
 .price__description{
-
-	margin-left: 10px;
+	font-size: 30px;
+	font-family: f;
+	margin-top: 0px;
 }

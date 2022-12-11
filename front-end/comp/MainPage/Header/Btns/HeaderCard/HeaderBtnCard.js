@@ -1,12 +1,19 @@
 import { useState } from "react";
 import CartIcon from "./btn-card/CardIcon";
 import styles from "./HeaderBtnCard.module.css";
-const HeaderbtnCard = () =>{
+import { useRouter } from "next/router";
 
+const HeaderbtnCard = () =>{
+	const router = useRouter();
 	const [CartItems, SetCartItems] = useState(0)
 
+	const cartHandler = () => {
+		router.push({
+			pathname: "/Cart",
+		  });
+	}
 	return(
-		<button className={styles.button}>
+		<button className={styles.button} onClick={cartHandler}>
 			<span className={styles.icon}>
 				<CartIcon/>
 			</span>

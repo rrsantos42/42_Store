@@ -2,11 +2,10 @@ import styles from "./AddToCart.module.css"
 
 const AddToCart = () =>{
 
-	const BtnCartHandler = () => {
-
+	const BtnCartHandler = async () => {
 	}
 	return(
-				<button className={styles.cradBtn}  onClick={BtnCartHandler}>Add To Cart</button>
+		<button className={styles.cradBtn}  onClick={BtnCartHandler}>Add To Cart</button>
 	);
 };
 

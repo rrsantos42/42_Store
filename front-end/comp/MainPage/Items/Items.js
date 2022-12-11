@@ -24,7 +24,7 @@ const Items = () => {
   return (
     <div className={styles.Productcontainer}>
       {loading ? (
-        <p>{loading}</p>
+       <div className={styles.ldscircle}><div></div></div>
       ) : (
         products.map((product) => <Item product={product} key={product.id} />)
       )}
