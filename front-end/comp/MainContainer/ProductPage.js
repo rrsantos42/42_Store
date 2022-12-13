@@ -1,11 +1,11 @@
-import styles from "./MainContainer.module.css";
+import styles from "./ProductPage.module.css";
 import ProductImg from "./ProductImg/ProductImg";
 import Description from "./Description/Description";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const MainContainer = () => {
+const ProductPage = () => {
   const router = useRouter();
 
   const [product, setProducts] = useState([]);
@@ -36,4 +36,4 @@ const MainContainer = () => {
   );
 };
 
-export default MainContainer;
+export default ProductPage;
