@@ -11,7 +11,6 @@ const Items = () => {
     "https://store-test-c9b34-default-rtdb.firebaseio.com/.json";
 
   useEffect(() => {
-    console.log("USE_EF");
 
     const getProducts = async () => {
       setProducts((await axios(productsUrl)).data.Products);
