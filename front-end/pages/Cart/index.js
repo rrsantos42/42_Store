@@ -1,8 +1,12 @@
+import  Header  from "../../comp/MainPage/Header/header";
+import CartComp from "../../comp/Cartcomp/Cartcomp";
+
 const CartPage = () => {
+
   return (
     <div>
-      <p>CartPage</p>
-      <p>To Be Done ....</p>
+      <Header/>
+      <CartComp/>
     </div>
   );
 };
