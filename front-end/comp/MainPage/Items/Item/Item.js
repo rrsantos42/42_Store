@@ -1,6 +1,8 @@
-import Image from "next/image";
-import styles from "./Item.module.css";
+
+import styles from "./Item.module.scss";
 import { useRouter } from "next/router";
+import Card from 'react-bootstrap/Card';
+
 
 const Item = (props) => {
   const router = useRouter();
@@ -14,17 +16,17 @@ const Item = (props) => {
   };
   return (
     <button className={styles.productbtns} onClick={productHandler}>
-      <div className={styles.productcontainer}>
-        <Image
+      <Card border="dark">
+        <Card.Img
           src="/sweat.png"
           alt="Product"
           className={styles.productimg}
           width="220"
           height="280"
         />
-        <p>{props.product.type}</p>
-        <p className={styles.price}>{props.product.price} €</p>
-      </div>
+        <Card.Title bsPrefix='card-text' className={styles.descrep}>{props.product.type}</Card.Title>
+        <Card.Text className={styles.price}>{props.product.price}€</Card.Text>
+      </Card>
     </button>
   );
 };

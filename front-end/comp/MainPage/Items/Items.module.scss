@@ -40,3 +40,20 @@
 	  transform: rotateY(3600deg);
 	}
   }
+
+  @media screen and (min-width:2500px){
+	.Productcontainer{
+	margin-left: 20%;
+	margin-right: 20%;
+	gap: 100px;
+	transform: scale(1.1);
+	}
+  }
+
+  @media screen and (max-width:720px){
+	.Productcontainer{
+	margin-left: 20%;
+	margin-right: 20%;
+
+	}
+  }

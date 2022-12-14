@@ -5,9 +5,21 @@ const Selector = (props) => {
   const [sizeMclic, setSizeM] = useState(0);
   const [sizeLclic, setSizeL] = useState(0);
   const [sizeXLclic, setSizeXL] = useState(0);
+  const [sizeSAval, setSizeSAval] = useState(true);
+  const [sizeMAval, setSizeMAval] = useState(true);
+  const [sizeLAval, setSizeLAval] = useState(true);
+  const [sizeXLAval, setSizeXLAval] = useState(true);
   useEffect(() => {
+    if(props.product.Size.S)
+    setSizeSAval(false);
+    if(props.product.Size.M)
+    setSizeMAval(false);
+    if(props.product.Size.L)
+    setSizeLAval(false);
+    if(props.product.Size.XL)
+    setSizeXLAval(false);
 
-  },[sizeSclic, sizeMclic, sizeLclic, sizeXLclic])
+  },[])
   const sizeSHandler = () => {
     setSizeS(1);
     setSizeM(0);
@@ -40,52 +52,52 @@ const Selector = (props) => {
   return (
     <div className={styles.sizesSelector}>
       {sizeSclic ? (
-        <button className={styles.sizeClicked} onClick={sizeSHandler}>
+        <button className={styles.sizeClicked} onClick={sizeSHandler} disabled={sizeSAval}>
           <div className={styles.paragrafcont}>
             <p className={styles.paragraf}>S</p>
           </div>
         </button>
       ) : (
-        <button className={styles.sizeNotClicked} onClick={sizeSHandler}>
+        <button className={styles.sizeNotClicked} onClick={sizeSHandler} disabled={sizeSAval} >
           <div className={styles.paragrafcont}>
             <p className={styles.paragraf}>S</p>
           </div>
         </button>
       )}
          {sizeMclic ? (
-        <button className={styles.sizeClicked} onClick={sizeMHandler}>
+        <button className={styles.sizeClicked} onClick={sizeMHandler} disabled={sizeMAval}>
           <div className={styles.paragrafcont}>
             <p className={styles.paragraf}>M</p>
           </div>
         </button>
       ) : (
-        <button className={styles.sizeNotClicked} onClick={sizeMHandler}>
+        <button className={styles.sizeNotClicked} onClick={sizeMHandler} disabled={sizeMAval}>
           <div className={styles.paragrafcont}>
             <p className={styles.paragraf}>M</p>
           </div>
         </button>
       )}
          {sizeLclic ? (
-        <button className={styles.sizeClicked} onClick={sizeLHandler}>
+        <button className={styles.sizeClicked} onClick={sizeLHandler} disabled={sizeLAval}>
           <div className={styles.paragrafcont}>
             <p className={styles.paragraf}>L</p>
           </div>
         </button>
       ) : (
-        <button className={styles.sizeNotClicked} onClick={sizeLHandler}>
+        <button className={styles.sizeNotClicked} onClick={sizeLHandler} disabled={sizeLAval}>
           <div className={styles.paragrafcont}>
             <p className={styles.paragraf}>L</p>
           </div>
         </button>
       )}
          {sizeXLclic ? (
-        <button className={styles.sizeClicked} onClick={sizeXLHandler}>
+        <button className={styles.sizeClicked} onClick={sizeXLHandler} disabled={sizeXLAval}>
           <div className={styles.paragrafcont}>
-            <p className={styles.paragraf}>Xl</p>
+            <p className={styles.paragraf}>XL</p>
           </div>
         </button>
       ) : (
-        <button className={styles.sizeNotClicked} onClick={sizeXLHandler}>
+        <button className={styles.sizeNotClicked} onClick={sizeXLHandler} disabled={sizeXLAval}>
           <div className={styles.paragrafcont}>
             <p className={styles.paragraf}>XL</p>
           </div>

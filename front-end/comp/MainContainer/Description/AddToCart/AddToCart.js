@@ -1,4 +1,4 @@
-import styles from "./AddToCart.module.css"
+import styles from "./AddToCart.module.scss"
 
 const AddToCart = () =>{
 

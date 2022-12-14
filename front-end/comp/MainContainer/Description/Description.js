@@ -15,8 +15,8 @@ const Description = (props) => {
     <div className={styles.descriptionContainer}>
       <h2 className={styles.header}>{SelectedProduct.type}</h2>
       <p className={styles.description}>{SelectedProduct.descreption}</p>
-      <p className={styles.price__description}>{SelectedProduct.price}$</p>
-      <Selector />
+      <p className={styles.price__description}>{SelectedProduct.price}€</p>
+      <Selector product={SelectedProduct}/>
       <QuantitySelection />
       <AddToCart />
     </div>

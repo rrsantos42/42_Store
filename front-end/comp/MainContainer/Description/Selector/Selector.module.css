@@ -1,12 +1,11 @@
 .sizesSelector{
 	display: flex;
-	align-items: center;
-	justify-items: center;
+
 	gap: 8px;
 }
 .sizeClicked{
-	width: 40px;
-	height: 40px;
+	width: 39px;
+	height: 39px;
 	border: 2px;
 	border-style: solid	;
 	border-color: rgb(0, 255, 208);
@@ -31,4 +30,6 @@
 	margin-top: 8px;
 	margin-left: 8px;
 	text-align: center;
+	font-size: 15px;
+	font-family: 'Merriweather', serif;
 }

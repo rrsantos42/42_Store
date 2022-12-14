@@ -1,4 +1,4 @@
-import styles from "./header.module.css"
+import styles from "./header.module.scss"
 import Logo from "./logo/logo";
 import SearchBar from "./SearchBar/SearchBar";
 import Btns from "./Btns/Btns";
