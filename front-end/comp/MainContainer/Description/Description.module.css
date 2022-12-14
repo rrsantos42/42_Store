@@ -1,13 +1,13 @@
 .header{
 	margin-bottom: 0px;
 	font-size: 40px;
+	font-family: 'Anton', sans-serif;
 }
 
 .descriptionContainer{
 	display: flex;
 	margin-top: 0%;
 	flex-direction: column;
-	gap: 4px;
 	width: 30%;
 }
 
@@ -17,11 +17,12 @@
 	margin-top: 0px;
 	margin-bottom: 5%;
 	padding-top: 0px;
+	font-family: 'Merriweather', serif;
 
 }
 
 .price__description{
 	font-size: 30px;
-	font-family: f;
+	font-family: 'Anton', sans-serif;
 	margin-top: 0px;
 }

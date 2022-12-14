@@ -1,5 +1,5 @@
 import Item from "./Item/Item";
-import styles from "./Items.module.css";
+import styles from "./Items.module.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
 

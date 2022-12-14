@@ -1,5 +1,8 @@
+import styles from '../../styles/Backgroud.module.scss'
+
+
 const Profile = () =>{
-    return(<div>
+    return(<div className={styles.mainbody} >
         </div>
         )
 }

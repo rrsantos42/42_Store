@@ -1,9 +1,10 @@
 import Header from "../../comp/MainPage/Header/header";
 import ProductPage from "../../comp/MainContainer/ProductPage";
+import styles from '../../styles/Backgroud.module.scss'
 const ProductIdPage = () => {
   
         return(
-            <div>
+            <div className={styles.mainbody}>
                 <Header/>
                 <ProductPage/>
             </div>
