@@ -1,4 +1,4 @@
-import styles from "./Btns.module.css"
+import styles from "./Btns.module.scss"
 import HeaderbtnCard from "./HeaderCard/HeaderBtnCard";
 import Profile from "./Profile/Profile";
 

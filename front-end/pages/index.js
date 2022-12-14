@@ -1,12 +1,12 @@
 import Header from "../comp/MainPage/Header/header";
 import Items from '../comp/MainPage/Items/Items';
+import styles from '../styles/Backgroud.module.scss'
 
-
-const MainPage = (props) => {
+const MainPage = () => {
 	return(
-	<div>
+	<div className={styles.mainbody}>
 		<Header/>
-		<Items product={props.product}/>
+		<Items/>
 	  </div>
 	);
 }

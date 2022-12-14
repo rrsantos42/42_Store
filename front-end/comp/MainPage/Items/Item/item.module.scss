@@ -1,0 +1,28 @@
+.productimg {
+  width: 220px;
+  height: 280px;
+}
+.productcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+}
+.productbtns {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.productbtns:hover {
+  scale: 1.1;
+}
+
+.price {
+  font-size: 20x;
+  font-family: 'La Belle Aurore', cursive;
+}
+
+.descrep {
+  font-family: "Anton", sans-serif;
+}

@@ -1,12 +1,11 @@
 import  Header  from "../../comp/MainPage/Header/header";
-import CartComp from "../../comp/Cartcomp/Cartcomp";
+import styles from '../../styles/Backgroud.module.scss'
 
 const CartPage = () => {
 
   return (
-    <div>
+    <div className={styles.mainbody}>
       <Header/>
-      <CartComp/>
     </div>
   );
 };

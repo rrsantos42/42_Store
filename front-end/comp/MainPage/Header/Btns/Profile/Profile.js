@@ -1,23 +1,28 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import { BsPersonFill } from "react-icons/bs"
 import { useRouter } from 'next/router';
+import ModalLogOut from './ModalLogOut/ModalLogOut';
+import styles from './Profile.module.scss'
 const Profile = () =>{
+
+
     const router = useRouter()
     const viewHandler = () =>{
         router.push({
-            pathname: "/profile"
-        })
+			pathname: "/profile"
+		})
     }
+
     return(
-        <Dropdown >
-        <Dropdown.Toggle variant="primary" id="dropdown-basic">
+        <Dropdown className={styles.Dropdown} >
+        <Dropdown.Toggle variant="info" id="dropdown-basic">
           <BsPersonFill/>
         </Dropdown.Toggle>
         <Dropdown.Menu>
           <Dropdown.Item onClick={viewHandler}>View Profile</Dropdown.Item>
           <Dropdown.Item href="/#">Orders</Dropdown.Item>
           <Dropdown.Divider/>
-          <Dropdown.Item href="/#">Log Out</Dropdown.Item>
+          <ModalLogOut/>
         </Dropdown.Menu>
       </Dropdown>
     );
