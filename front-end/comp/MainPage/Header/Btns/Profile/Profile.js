@@ -9,9 +9,15 @@ const Profile = () =>{
     const router = useRouter()
     const viewHandler = () =>{
         router.push({
-			pathname: "/profile"
-		})
+            pathname: "/profile"
+        })
     }
+
+    const OrdersHandler = () =>{
+      router.push({
+    pathname: "/Orders"
+  })
+  }
 
     return(
         <Dropdown className={styles.Dropdown} >
@@ -20,7 +26,7 @@ const Profile = () =>{
         </Dropdown.Toggle>
         <Dropdown.Menu>
           <Dropdown.Item onClick={viewHandler}>View Profile</Dropdown.Item>
-          <Dropdown.Item href="/#">Orders</Dropdown.Item>
+          <Dropdown.Item onClick={OrdersHandler}>Orders</Dropdown.Item>
           <Dropdown.Divider/>
           <ModalLogOut/>
         </Dropdown.Menu>

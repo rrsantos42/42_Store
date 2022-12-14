@@ -1,0 +1,37 @@
+[
+    {
+        "id":0,
+        "item":"Sweat Shirt",
+        "price": 20.00,
+        "size": "L",
+        "quantity":1
+    },
+    {
+        "id":1,
+        "item":"Towel",
+        "price": 10.00,
+        "size": "NULL",
+        "quantity":2
+    },
+    {
+        "id":2,
+        "item":"Mouse Pad",
+        "price": 5.00,
+        "size": "NULL",
+        "quantity":1
+    },
+    {
+        "id":3,
+        "item":"T-shirt",
+        "price": 15.00,
+        "size": "S",
+        "quantity":1
+    },
+    {
+        "id":4,
+        "item":"Mouse Pad",
+        "price": 5.00,
+        "size": "NULL",
+        "quantity":5
+    }
+]
