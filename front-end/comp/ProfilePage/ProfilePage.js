@@ -1,6 +1,6 @@
 const ProfilePage = () =>{
     return(
-        <p>Under Construction</p>
+        <p>Under Construction...</p>
     );
 };
 
