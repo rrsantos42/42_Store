@@ -14,12 +14,15 @@
 .searchbtn{
 	height: 40px;
 	background-color: rgb(255, 255, 255);
-	border-radius: 5px;
-	border-color:white ;
+	
 	padding: 0px;
-	border: 0px;
+	border: none;
+	border-radius: 10px;
 }
 
+.Searchbar:focus{
+	outline: 2px solid rgb(255, 255, 255);     
+  }
 
 .searchbtn:hover{
 	background-color: rgb(245, 245, 245);

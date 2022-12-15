@@ -9,6 +9,7 @@
 	margin-top: 0%;
 	flex-direction: column;
 	width: 30%;
+	gap: 10px;
 }
 
 .description{
@@ -16,6 +17,7 @@
 	font-family: f;
 	margin-top: 0px;
 	margin-bottom: 5%;
+	margin-left: 10px;
 	padding-top: 0px;
 	font-family: 'Merriweather', serif;
 

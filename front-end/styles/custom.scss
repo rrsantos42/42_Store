@@ -5,5 +5,9 @@
     $info: #1d1c1a;
 /* import bootstrap to set changes */
 
+html
+    {
+        background-image: url("../public/background.webp")
+    }
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=La+Belle+Aurore&family=Merriweather&family=Rubik+Vinyl&display=swap');@import '~bootstrap/scss/bootstrap.scss';
