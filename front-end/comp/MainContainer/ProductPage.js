@@ -28,7 +28,7 @@ const ProductPage = () => {
        <div className={styles.ldscircle}><div></div></div>
       ) : (
         <div className={styles.mainContainer}>
-          <ProductImg />
+          <ProductImg product={product}/>
           <Description product={product} />
         </div>
       )}

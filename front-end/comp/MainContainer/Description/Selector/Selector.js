@@ -9,6 +9,10 @@ const Selector = (props) => {
   const [sizeMAval, setSizeMAval] = useState(true);
   const [sizeLAval, setSizeLAval] = useState(true);
   const [sizeXLAval, setSizeXLAval] = useState(true);
+  if(!props.product.Size)
+    return(
+      <div></div>
+    );
   useEffect(() => {
     if(props.product.Size.S)
     setSizeSAval(false);
