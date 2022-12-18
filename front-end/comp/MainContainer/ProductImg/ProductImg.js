@@ -1,30 +1,25 @@
 import styles from "./ProductImg.module.css"
 import Image from "next/image";
-import { useRouter } from "next/router";
+
 
 const ProductImg = (props) =>{
 	
-	const router = useRouter();
 	let imgSelect = '/sweatshirt.png'
 	let i = 0;
-	
-	for (;props.product[i].type != router.query.productSelected; i++);
-	
-	let SelectedProduct = props.product[i];
 
-	if(SelectedProduct.type== 'Sweat Shirt')
+	if(props.product.type== 'Sweat Shirt')
     	imgSelect = '/sweatshirt.png';
-	if(SelectedProduct.type == 'T-Shirt')
+	else if (props.product.type == 'T-Shirt')
     	imgSelect = '/tshirtleave.png';
-	if(SelectedProduct.type == 'Towel')
+	else if (props.product.type == 'Towel')
     	imgSelect = '/towel.png';
-  	if(SelectedProduct.type == 'Towel')
+  	else if (props.product.type == 'Towel')
     	imgSelect = '/towel.png';
-	if(SelectedProduct.type == 'Mouse Pad')
+	else if (props.product.type == 'Mouse Pad')
     	imgSelect = '/mousepad.png';
-	if(SelectedProduct.type == 'water bottle')
+	else if (props.product.type == 'water bottle')
     	imgSelect = '/water.png';
-	if(SelectedProduct.type == 'Coffee Mug')
+	else if (props.product.type == 'Coffee Mug')
    	 imgSelect = '/cooffemug.png';
 
 	return(
