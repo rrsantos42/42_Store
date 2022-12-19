@@ -19,17 +19,17 @@ const Item = (props) => {
 
   if(props.product.type == 'Sweat Shirt')
     imgSelect = '/sweatshirt.png';
-  if(props.product.type == 'T-Shirt')
+  else if(props.product.type == 'T-Shirt')
     imgSelect = '/tshirtleave.png';
-  if(props.product.type == 'Towel')
+  else if(props.product.type == 'Towel')
     imgSelect = '/towel.png';
-  if(props.product.type == 'Towel')
+  else if(props.product.type == 'Towel')
     imgSelect = '/towel.png';
-  if(props.product.type == 'Mouse Pad')
+  else if(props.product.type == 'Mouse Pad')
     imgSelect = '/mousepad.png';
-  if(props.product.type == 'water bottle')
+  else if(props.product.type == 'water bottle')
     imgSelect = '/water.png';
-  if(props.product.type == 'Coffee Mug')
+  else if(props.product.type == 'Coffee Mug')
     imgSelect = '/cooffemug.png';
 
   return (
