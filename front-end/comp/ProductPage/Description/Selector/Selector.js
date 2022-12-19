@@ -9,15 +9,20 @@ const Selector = (props) => {
   const [sizeMAval, setSizeMAval] = useState(true);
   const [sizeLAval, setSizeLAval] = useState(true);
   const [sizeXLAval, setSizeXLAval] = useState(true);
+  if(!props.product.Size)
+    return(
+      <>
+      </>
+    );
   useEffect(() => {
     if(props.product.Size.S)
-    setSizeSAval(false);
+      setSizeSAval(false);
     if(props.product.Size.M)
-    setSizeMAval(false);
+      setSizeMAval(false);
     if(props.product.Size.L)
-    setSizeLAval(false);
+      setSizeLAval(false);
     if(props.product.Size.XL)
-    setSizeXLAval(false);
+      setSizeXLAval(false);
 
   },[])
   const sizeSHandler = () => {

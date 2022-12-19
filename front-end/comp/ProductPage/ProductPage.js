@@ -7,6 +7,7 @@ import axios from "axios";
 
 const ProductPage = () => {
   const router = useRouter();
+  let SelectedProduct = [];
 
   const [product, setProducts] = useState([]);
   const [loading, setLoading] = useState("Loading");
@@ -22,14 +23,23 @@ const ProductPage = () => {
 
     getProduct();
   }, []);
+
+  if(!loading)
+  {
+    let i = 0;
+    for (;product[i].type != router.query.productSelected; i++);
+    
+    SelectedProduct = product[i];
+  }
+
   return (
     <div>
       {loading ? (
        <div className={styles.ldscircle}><div></div></div>
       ) : (
         <div className={styles.mainContainer}>
-          <ProductImg />
-          <Description product={product} />
+          <ProductImg product={SelectedProduct}/>
+          <Description product={SelectedProduct} />
         </div>
       )}
     </div>
