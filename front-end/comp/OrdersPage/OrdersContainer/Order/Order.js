@@ -1,20 +1,15 @@
+import OrderItems from "./OrderItems/OrderItems"
+
 const Order = (props) => {
-    
-    const RenderSize = () => {
-        return (
-            <p>Size: {props.order.size}</p>
-        );
-    };
-    
     return(
         <div>
-            <p>ID: {props.order.id}</p>
-            <p>ITEM: {props.order.item}</p>
-            {props.order.size != "NULL"? RenderSize() : null}
-            <p>Quantidade: {props.order.quantity}</p>
-            <p>Preco total: {props.order.quantity * props.order.price}</p>
-            <p>-------------------------</p>
-
+            <p>==========OB===============</p>
+            <p>id = {props.order.id}</p>
+            <p>date = {props.order.date}</p>
+            <p>Final Price = {props.order.final_price}</p>
+            <p>status = {props.order.status}</p>
+            <p>Items<OrderItems items={props.order.items}/></p>
+            <p>-----------OE--------------</p>
         </div>
     )
 }
