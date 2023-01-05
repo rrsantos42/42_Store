@@ -2,8 +2,6 @@
 import styles from "./Item.module.scss";
 import { useRouter } from "next/router";
 import Card from 'react-bootstrap/Card';
-import { useEffect } from "react";
-
 
 const Item = (props) => {
   const router = useRouter();

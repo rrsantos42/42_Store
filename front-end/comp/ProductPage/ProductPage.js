@@ -1,4 +1,4 @@
-import styles from "./ProductPage.module.css";
+import styles from "./ProductPage.module.scss";
 import ProductImg from "./ProductImg/ProductImg";
 import Description from "./Description/Description";
 import { useRouter } from "next/router";

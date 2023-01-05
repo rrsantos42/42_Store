@@ -1,4 +1,4 @@
-import styles from "./Description.module.css";
+import styles from "./Description.module.scss";
 import Selector from "./Selector/Selector";
 import QuantitySelection from "./QuantitySelection/QuantitySelection";
 import AddToCart from "./AddToCart/AddToCart";

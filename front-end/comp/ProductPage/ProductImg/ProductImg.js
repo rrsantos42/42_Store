@@ -1,4 +1,4 @@
-import styles from "./ProductImg.module.css"
+import styles from "./ProductImg.module.scss"
 import Image from "next/image";
 
 
