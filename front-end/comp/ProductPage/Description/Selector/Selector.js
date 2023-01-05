@@ -30,7 +30,6 @@ const Selector = (props) => {
     setSizeM(0);
     setSizeL(0);
     setSizeXL(0);
-    console.log(sizeSclic);
   };
 
   const sizeMHandler = () => {

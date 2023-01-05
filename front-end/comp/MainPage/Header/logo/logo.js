@@ -1,5 +1,5 @@
 import Image from "next/image"
-import styles from "./logo.module.css"
+import styles from "./logo.module.scss"
 import { useRouter } from "next/router"
 const Logo = () =>{
 	const router = useRouter();

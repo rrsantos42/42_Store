@@ -1,4 +1,4 @@
-import styles from"./QuantitySelection.module.css"
+import styles from"./QuantitySelection.module.scss"
 
 const SizeSelection = () =>{
 
