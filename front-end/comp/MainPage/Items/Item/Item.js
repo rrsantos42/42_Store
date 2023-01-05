@@ -39,8 +39,8 @@ const Item = (props) => {
           src={imgSelect}
           alt="Product"
           className={styles.productimg}
-          width="220"
-          height="280"
+          width="200"
+          height="240"
         />
         <Card.Title bsPrefix='card-text' className={styles.descrep}>{props.product.type}</Card.Title>
         <Card.Text className={styles.price}>{props.product.price}€</Card.Text>

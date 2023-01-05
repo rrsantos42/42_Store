@@ -1,4 +1,4 @@
-import styles from "./Selector.module.css";
+import styles from "./Selector.module.scss";
 import { useState , useEffect } from "react";
 const Selector = (props) => {
   const [sizeSclic, setSizeS] = useState(0);
