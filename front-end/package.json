@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "dev": " next dev -p 8000",
+    "dev": " next dev -p 8000 ",
     "build": "next build",
     "start": "next start"
   },
@@ -18,7 +18,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-modal": "^3.16.1",
-    "sass": "^1.56.2",
+    "sass": "^1.57.1",
     "scss": "^0.2.4"
   }
 }

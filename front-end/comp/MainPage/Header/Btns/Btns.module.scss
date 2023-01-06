@@ -7,3 +7,10 @@
 	gap: 70px;
 }
 
+@media only screen and (min-width: 2000px) {
+	.Btns{
+        gap:150px;
+		transform: scale(1.2)
+
+    }
+  }

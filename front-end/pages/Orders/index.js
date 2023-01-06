@@ -1,12 +1,11 @@
-import Header from '../../comp/MainPage/Header/header';
+import Header from "../../comp/MainPage/Header/header"
+import OrdersPage from "../../comp/OrdersPage/OrdersPage";
 import styles from '../../styles/Backgroud.module.scss'
-import OrdersPage from '../../comp/OrdersPage/OrdersPage';
-
 const Orders = () =>{
 
     return(
         <div className={styles.mainbody}>
-            <Header/>         
+            <Header/>
             <OrdersPage/>
         </div>
 
