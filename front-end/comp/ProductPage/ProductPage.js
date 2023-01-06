@@ -33,7 +33,7 @@ const ProductPage = () => {
   }
 
   return (
-    <div>
+    <div className={styles.ContainerProduct}>
       {loading ? (
        <div className={styles.ldscircle}><div></div></div>
       ) : (

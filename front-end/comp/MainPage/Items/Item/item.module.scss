@@ -1,6 +1,6 @@
 .productimg {
   width: 220px;
-  height: 280px;
+  height: 250px;
 }
 .productcontainer {
   display: flex;
@@ -26,3 +26,9 @@
 .descrep {
   font-family: "Anton", sans-serif;
 }
+@media only screen and (min-width: 2000px) {
+	.productcontainer{
+		transform: scale(2)
+
+    }
+  }

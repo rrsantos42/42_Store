@@ -39,3 +39,15 @@
 	  transform: rotateY(3600deg);
 	}
   }
+  .ContainerProduct{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+  }
+  @media only screen and (min-width: 2000px) {
+	.ContainerProduct{
+		transform: scale(1.3)
+
+    }
+  }
