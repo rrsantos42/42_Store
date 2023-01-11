@@ -9,8 +9,8 @@ const Profile = () =>{
     const router = useRouter()
     const viewHandler = () =>{
         router.push({
-			pathname: "/profile"
-		})
+            pathname: "/profile"
+        })
     }
 
     const OrdersHandler = () =>{

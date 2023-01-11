@@ -1,9 +1,13 @@
 import styles from"./QuantitySelection.module.scss"
 
-const SizeSelection = () =>{
+const SizeSelection = (props) =>{
 
+	const getQuantity = (e) => {
+		props.quantity(e.target.value)
+	};
+	
 	return(
-		<select name="Quantity.." className={styles.quantity}>
+		<select name="Quantity.." className={styles.quantity} onChange={getQuantity}>
 			<option value="0">Quantity...</option>
 			<option value="1">1</option>
 			<option value="2">2</option>

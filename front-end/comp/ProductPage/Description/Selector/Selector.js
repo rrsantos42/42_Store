@@ -30,6 +30,7 @@ const Selector = (props) => {
     setSizeM(0);
     setSizeL(0);
     setSizeXL(0);
+    props.size("S")
   };
 
   const sizeMHandler = () => {
@@ -37,6 +38,7 @@ const Selector = (props) => {
     setSizeM(1);
     setSizeL(0);
     setSizeXL(0);
+    props.size("M")
   };
 
   const sizeLHandler = () => {
@@ -44,6 +46,8 @@ const Selector = (props) => {
     setSizeM(0);
     setSizeL(1);
     setSizeXL(0);
+    props.size("L")
+
   };
 
   const sizeXLHandler = () => {
@@ -51,6 +55,8 @@ const Selector = (props) => {
     setSizeM(0);
     setSizeL(0);
     setSizeXL(1);
+    props.size("XL")
+
   };
 
   return (
