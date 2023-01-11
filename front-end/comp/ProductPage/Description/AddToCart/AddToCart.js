@@ -1,6 +1,6 @@
 import styles from "./AddToCart.module.scss"
 
-const AddToCart = () =>{
+const AddToCart = (props) =>{
 
 	const BtnCartHandler =  () => {
 	}
