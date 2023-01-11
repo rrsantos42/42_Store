@@ -2,7 +2,7 @@ import styles from "./AddToCart.module.scss"
 
 const AddToCart = () =>{
 
-	const BtnCartHandler = async () => {
+	const BtnCartHandler =  () => {
 	}
 	return(
 		<button className={styles.cartBtn}  onClick={BtnCartHandler}>Add To Cart</button>

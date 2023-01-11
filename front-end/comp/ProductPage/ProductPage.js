@@ -32,14 +32,15 @@ const ProductPage = () => {
     SelectedProduct = product[i];
   }
 
+
   return (
     <div className={styles.ContainerProduct}>
       {loading ? (
        <div className={styles.ldscircle}><div></div></div>
       ) : (
         <div className={styles.mainContainer}>
-          <ProductImg product={SelectedProduct}/>
-          <Description product={SelectedProduct} />
+          <ProductImg product={SelectedProduct} />
+          <Description product={SelectedProduct}/>
         </div>
       )}
     </div>
