@@ -3,12 +3,13 @@ import Selector from "./Selector/Selector";
 import QuantitySelection from "./QuantitySelection/QuantitySelection";
 import { useState} from "react";
 import axios from "axios";
-
+import { useRouter } from "next/router"
 
 const Description = (props) => {
 
   const [size, setSize] = useState("");
   const [quantity, setQuantity] = useState(0);
+  const router = useRouter();
 
   const BtnCartHandler = async () => {
     const res = await axios.post("https://store-test-c9b34-default-rtdb.firebaseio.com/Cart.json", {
@@ -17,9 +18,9 @@ const Description = (props) => {
       quantity : quantity
 
     })
-    console.log(props.product);
-    console.log(quantity);
-    console.log(size);
+    router.push({
+			pathname: "/"
+		})
 	}
   const Sizehandler = (value) =>{
     setSize(value)

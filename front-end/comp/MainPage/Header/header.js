@@ -3,7 +3,7 @@ import Logo from "./logo/logo";
 import SearchBar from "./SearchBar/SearchBar";
 import Btns from "./Btns/Btns";
 
-const Header = () => {
+const Header = (props) => {
 	return(
 		<div className={styles.navcontainer}>
 			<Logo/>
