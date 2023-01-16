@@ -10,7 +10,7 @@ const Logo = () =>{
 	}
 
 	return(
-		<Image src="/logo.png" className={styles.logoimg} alt="logo" width= "300" height="100" onClick={logoHandler}></Image>
+		<Image src="/logo.png" className={styles.logoimg} alt="logo" height={100} width={300} onClick={logoHandler}></Image>
 	);
 }
 export default Logo
