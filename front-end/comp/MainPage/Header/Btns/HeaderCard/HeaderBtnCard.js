@@ -24,16 +24,23 @@ const HeaderbtnCard = (props) => {
   function countProperties(obj) {
     return Object.keys(obj).length;
 }
-console.log(props.post)
-  // useEffect(() => {
-  //   console.log(props.data)
-  //     SetCartItems(props.res)
-  //     if(CartItems == undefined)
-  //       SetNbrItems(0);
-  //     else
-  //       SetNbrItems(countProperties(CartItems));
-  // },[CartItems]);
+  const productsUrl =
+    "https://store-test-c9b34-default-rtdb.firebaseio.com/.json";
 
+  useEffect(() => {
+
+    const getCartItems = async () => {
+      SetCartItems((await axios(productsUrl)).data.Cart);
+      if(CartItems == undefined)
+        SetNbrItems(0);
+      else
+      SetNbrItems(countProperties(CartItems));
+      console.log(CartItems);
+    };
+
+
+    getCartItems(CartItems);
+  },[]);
 
   const cartHandler = () => {
     router.push({
@@ -49,5 +56,6 @@ console.log(props.post)
     </button>
   );
 };
+
 
 export default HeaderbtnCard;
