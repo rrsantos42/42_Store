@@ -1,4 +1,4 @@
-import  Header  from "../../comp/MainPage/Header/header";
+import  Header  from "../../comp/Header/header";
 import styles from '../../styles/Backgroud.module.scss'
 import Cart from "../../comp/Cart/Cart";
 const CartPage = () => {
