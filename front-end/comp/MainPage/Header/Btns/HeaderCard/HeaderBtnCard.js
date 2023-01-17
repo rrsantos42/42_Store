@@ -36,6 +36,7 @@ const HeaderbtnCard = (props) => {
       else
       SetNbrItems(countProperties(CartItems));
       console.log(CartItems);
+      console.log(NbrItems)
     };
 
 

@@ -12,7 +12,6 @@ const Cart = () => {
     const getProduct = async () => {
       setCart(Object.entries(((await axios(productsUrl)).data.Cart)))
       setLoading(0);
-      console.log(cart)
     };
 
     getProduct();
@@ -23,7 +22,7 @@ const Cart = () => {
          <div className={styles.ldscircle}><div></div></div>
         ) : (
           <div>
-            {cart.map( (item) => <CartItem Item={item} key={item.id}/>)}
+            {cart.map( (item) => <CartItem Item={item} key={item[1].id}/>)}
           </div>
         )}
       </div>
