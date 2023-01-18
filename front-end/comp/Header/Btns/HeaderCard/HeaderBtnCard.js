@@ -2,44 +2,25 @@ import { useState, useEffect } from "react";
 import styles from "./HeaderBtnCard.module.scss";
 import { useRouter } from "next/router";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import axios from "axios";
 
-// export async function getStaticProps(context) {
-//   const productsUrl =
-//     "https://store-test-c9b34-default-rtdb.firebaseio.com/.json";
-//     const res = await axios.get(productsUrl);
-//     const posts = await res.json
-//     return {
-//         props: {
-//             posts
-//         }
-//     };
-// }
+
 
 const HeaderbtnCard = (props) => {
   const router = useRouter();
   const [NbrItems, SetNbrItems] = useState(0);
-  const [CartItems, SetCartItems] = useState([]);
+  const [CartItems, SetCartItems] = useState(0);
 
   function countProperties(obj) {
+    if(obj == undefined)
+      return(0);
     return Object.keys(obj).length;
-}
-  const productsUrl =
-    "https://store-test-c9b34-default-rtdb.firebaseio.com/.json";
+  }
 
   useEffect(() => {
-
-    const getCartItems = async () => {
-      SetCartItems((await axios(productsUrl)).data.Cart);
-      if(CartItems == undefined)
-        SetNbrItems(0);
-      else
+      SetCartItems(props.data);
       SetNbrItems(countProperties(CartItems));
-    };
 
-
-    getCartItems(CartItems);
-  },[]);
+  },[CartItems]);
 
   const cartHandler = () => {
     router.push({

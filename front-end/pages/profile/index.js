@@ -1,4 +1,4 @@
-import Header from "../../comp/MainPage/Header/header";
+import Header from "../../comp/Header/header";
 import ProfilePage from "../../comp/ProfilePage/ProfilePage";
 import styles from '../../styles/Backgroud.module.scss'
 

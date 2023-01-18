@@ -3,12 +3,14 @@ import Logo from "./logo/logo";
 import SearchBar from "./SearchBar/SearchBar";
 import Btns from "./Btns/Btns";
 
+
 const Header = (props) => {
+
 	return(
 		<div className={styles.navcontainer}>
 			<Logo/>
 			<SearchBar/>
-			<Btns/>
+			<Btns data={props.data}/>
 		</div>
 	);
 }

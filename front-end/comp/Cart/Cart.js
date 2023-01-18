@@ -1,20 +1,16 @@
 import { useState,useEffect } from "react";
 import styles from "./Cart.module.scss"
 import CartItem from "./CartItem/CartItem";
-import axios from "axios";
-const Cart = () => {
+
+const Cart = (props) => {
     const [cart, setCart] = useState(0);
     const [loading, setLoading] = useState(1)
     const productsUrl =
     "https://store-test-c9b34-default-rtdb.firebaseio.com/.json";
 
     useEffect(() => {
-    const getProduct = async () => {
-      setCart(Object.entries(((await axios(productsUrl)).data.Cart)))
+      setCart(Object.entries(props.data))
       setLoading(0);
-    };
-
-    getProduct();
   }, []);
     return(
         <div>

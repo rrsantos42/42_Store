@@ -3,18 +3,13 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Order from "./Order/Order";
 
-const OrdersPage = () => {
+const OrdersPage = (props) => {
 
     const [OrdersData, setOrders] = useState([]);
     const [Loading, setLoading] = useState("loading");
-    const OrdersUrl = "https://store-test-c9b34-default-rtdb.firebaseio.com/.json";
-    useEffect(() =>{
-        const getOrders = async () =>{
-            setOrders((await axios(OrdersUrl)).data.orders);
-            setLoading("");
-        };
-
-        getOrders();
+    useEffect(()=>{
+        setOrders(props.Orders);
+        setLoading("")
 
     },[]);
 

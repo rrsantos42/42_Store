@@ -1,12 +1,30 @@
 import  Header  from "../../comp/Header/header";
 import styles from '../../styles/Backgroud.module.scss'
 import Cart from "../../comp/Cart/Cart";
-const CartPage = () => {
+import axios from "axios";
+
+
+export async function getStaticProps() {
+	const productsUrl =
+    "https://store-test-c9b34-default-rtdb.firebaseio.com/.json"
+  
+	const res = await axios.get(productsUrl);
+	const data = res.data.Cart;
+
+	return {
+		props: {
+      		data,
+    	},
+  	};
+}
+
+
+const CartPage = (props) => {
 
   return (
     <div className={styles.mainbody}>
-      <Header/>
-      <Cart/>
+      <Header data={props.data}/>
+      <Cart data={props.data}/>
     </div>
   );
 };

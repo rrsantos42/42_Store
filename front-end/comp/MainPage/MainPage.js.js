@@ -1,12 +1,12 @@
 import Header from "../Header/header";
 import Items from "./Items/Items";
 
-const MainPage = () => {
+const MainPage = (props) => {
 
   return (
     <div>
       <Header/>
-      <Items />
+      <Items Products={props.Products}/>
     </div>
   );
 };

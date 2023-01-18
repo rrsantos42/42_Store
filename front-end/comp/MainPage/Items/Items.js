@@ -3,21 +3,15 @@ import styles from "./Items.module.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const Items = () => {
+const Items = (props) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState("Loading");
 
-  const productsUrl =
-    "https://store-test-c9b34-default-rtdb.firebaseio.com/.json";
-
   useEffect(() => {
 
-    const getProducts = async () => {
-      setProducts((await axios(productsUrl)).data.Products);
+      setProducts(props.Products);
       setLoading("");
-    };
 
-    getProducts();
   },[]);
 
   return (
