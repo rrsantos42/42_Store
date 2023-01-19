@@ -1,0 +1,40 @@
+.Card{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	border: 2px;
+	border-style: solid;
+}
+
+
+.container{
+}
+
+.Size{
+	font-size: 15px;
+}
+
+.deleteBtn{
+	color: rgb(255, 0, 0);
+	border: 0px;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	background-color: rgba(245, 0, 0, 0);
+}
+
+.descreption{
+	font-size: 25px;
+}
+
+.btnContainer{
+	// margin-top: 2rem;
+	display: flex;
+	margin-left: 10rem;
+
+}
+
+.Quantity{
+	margin-top: 1rem;
+	text-align: center;
+}

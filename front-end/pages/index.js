@@ -7,9 +7,12 @@ export async function getStaticProps() {
     "https://store-test-c9b34-default-rtdb.firebaseio.com/.json"
   
 	const res = await axios.get(productsUrl);
-	const data = res.data.Cart;
 	const Item = res.data.Products
-
+	let data = undefined 
+	if(res.data.Cart == undefined)
+		data = 0;
+	else	
+		data = res.data.Cart;
 	return {
 		props: {
       		data,

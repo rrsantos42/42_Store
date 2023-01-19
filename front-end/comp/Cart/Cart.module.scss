@@ -29,3 +29,15 @@
 	  transform: rotateY(3600deg);
 	}
   }
+
+  .CardContainer{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	flex-wrap: wrap;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	gap: 3rem;
+
+  }

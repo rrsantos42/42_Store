@@ -5,7 +5,7 @@ import Image from "next/image";
 const ProductImg = (props) =>{
 	
 	let imgSelect = '/sweatshirt.png'
-	let i = 0;
+
 
 	if(props.product.type== 'Sweat Shirt')
     	imgSelect = '/sweatshirt.png';

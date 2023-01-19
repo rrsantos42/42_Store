@@ -16,6 +16,7 @@ const Description = (props) => {
       Product : props.product.type,
       size : size,
       quantity : quantity,
+      descreption : props.product.descreption,
       id : Math.floor(Math.random() * (100))
 
     })
