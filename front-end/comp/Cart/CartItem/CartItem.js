@@ -1,9 +1,17 @@
 import styles from "./CartItem.module.scss"
 import Image from "next/image";
 import { FaTrashAlt } from "react-icons/fa";
+import axios from "axios";
 
 const CartItem = (props) => {
     let imgSelect = '/sweatshirt.png'
+    let productObj = props.Item[0]
+    
+    const deleteHandler = async () =>{
+
+        await axios.delete(`https://store-test-c9b34-default-rtdb.firebaseio.com/Cart/${productObj}.json`);
+        window.location.reload(false);
+    }
 
 	if(props.Item[1].Product == 'Sweat Shirt')
     	imgSelect = '/sweatshirt.png';
@@ -30,7 +38,7 @@ const CartItem = (props) => {
             </div>
             <div className={styles.btnContainer}>
                 <p className={styles.Quantity}>{props.Item[1].quantity}</p>
-               <button className={styles.deleteBtn}>{<FaTrashAlt/>}</button>           
+               <button className={styles.deleteBtn} onClick={deleteHandler}>{<FaTrashAlt/>}</button>           
             </div>
         </div>    
     );
