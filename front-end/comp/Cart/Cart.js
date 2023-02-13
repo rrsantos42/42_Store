@@ -12,6 +12,12 @@ const Cart = (props) => {
       setCart(Object.entries(props.data))
       setLoading(0);
   }, []);
+  if(cart.length == 0)
+    return(
+      <>
+      <p>nothing to see here</p>
+      </>
+    )
 
     return(
         <div>

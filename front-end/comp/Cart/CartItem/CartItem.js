@@ -13,10 +13,7 @@ const CartItem = (props) => {
     const iHandler = () =>{
         setItems(items + 1)
     }
-    const removeItemHandler = () =>{
-
-
-    }
+ 
     return(
         <div className={styles.Card}>
             <CartImg product={props.Item[1].Product}/>

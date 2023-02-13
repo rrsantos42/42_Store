@@ -5,7 +5,8 @@ import { FaTrashAlt } from "react-icons/fa";
 import axios from "axios";
 const ModalDeleteItem = (props) =>{
 	const [show, setShow] = useState(false);
-	let productUrl =`https://store-test-c9b34-default-rtdb.firebaseio.com/Cart/${props.item}.json`
+	let productUrl =`https://store-test-c9b34-default-rtdb.firebaseio.com/Cart/${props.item}.json`;
+
 	const handleClose = () => {
 		 const deletePost = async () => {
 			await axios.delete(productUrl);
@@ -17,7 +18,8 @@ const ModalDeleteItem = (props) =>{
 	}
 	const handleShow = () => setShow(true);
 	const handleOpen = () => {
-		console.log("true")
+		console.log("true");
+		setShow(false)
 	}
 	return (
 	  <>
@@ -25,7 +27,7 @@ const ModalDeleteItem = (props) =>{
 		  <FaTrashAlt/>
 		</Button>
   
-		<Modal show={show} onHide={handleClose}>
+		<Modal show={show} onHide={handleOpen}>
 		  <Modal.Header closeButton>
 			<Modal.Title>Modal heading</Modal.Title>
 		  </Modal.Header>
