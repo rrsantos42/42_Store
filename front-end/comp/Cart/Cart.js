@@ -12,6 +12,7 @@ const Cart = (props) => {
       setCart(Object.entries(props.data))
       setLoading(0);
   }, []);
+
     return(
         <div>
         {loading ? (
