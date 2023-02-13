@@ -28,13 +28,19 @@
 }
 
 .btnContainer{
-	// margin-top: 2rem;
 	display: flex;
 	margin-left: 10rem;
+	align-items: center;
+
 
 }
 
-.Quantity{
-	margin-top: 1rem;
+.Box{
+	width: 10rem;
+}
+
+.Input{
+	width: 3rem;
 	text-align: center;
+	// background-color: red;
 }

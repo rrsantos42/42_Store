@@ -15,7 +15,7 @@ const Description = (props) => {
     const res = await axios.post("https://store-test-c9b34-default-rtdb.firebaseio.com/Cart.json", {
       Product : props.product.type,
       size : size,
-      quantity : quantity,
+      quantity : Number(quantity),
       descreption : props.product.descreption,
       id : Math.floor(Math.random() * (100))
 
@@ -29,7 +29,7 @@ const Description = (props) => {
   }
 
   const QuantityHandler = (value) => {
-    setQuantity(value)
+    setQuantity(parseInt(value))
   }
 
   return (

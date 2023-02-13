@@ -4,7 +4,6 @@ const Receipt = (props) => {
 
 	return(
 		<div>
-			<p>olaaaaaa</p>
 		</div>
 	);
 

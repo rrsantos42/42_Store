@@ -4,7 +4,7 @@ function MyApp({ Component, pageProps }) {
   return( 
     <SSRProvider>
       <Component {...pageProps} className="bodyy"/>
-      </SSRProvider>
+    </SSRProvider>
       )
 }
 
