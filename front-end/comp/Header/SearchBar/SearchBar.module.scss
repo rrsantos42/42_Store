@@ -1,0 +1,36 @@
+.Searchbar{
+	height:35px;
+	align-self: center;
+	width: 100%;
+	border: 0px;
+	border-radius: 5px;
+}
+.Search{
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	border-radius: 5px;
+}
+.searchbtn{
+	height: 40px;
+	background-color: rgb(255, 255, 255);
+	
+	padding: 0px;
+	border: none;
+	border-radius: 10px;
+}
+
+.Searchbar:focus{
+	outline: 2px solid rgb(255, 255, 255);     
+  }
+
+.searchbtn:hover{
+	background-color: rgb(245, 245, 245);
+
+}
+@media only screen and (min-width: 600px) {
+	.Search{
+        transform: scale(1.01)
+
+    }
+  }

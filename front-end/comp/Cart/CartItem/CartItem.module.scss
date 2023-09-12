@@ -1,0 +1,55 @@
+.Card{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	border: 2px;
+	border-style: solid;
+	padding-right: 1rem;
+}
+
+.Type{
+	font-family: "Anton", sans-serif;
+}
+
+.descreption{
+	font-family: 'Merriweather', serif;
+}
+.container{
+}
+
+.Size{
+	font-size: 15px;
+	font-family: "Anton", sans-serif;
+	
+}
+
+.deleteBtn{
+	color: rgb(255, 0, 0);
+	border: 0px;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	background-color: rgba(245, 0, 0, 0);
+}
+
+.descreption{
+	font-size: 25px;
+}
+
+.btnContainer{
+	display: flex;
+	margin-left: 10rem;
+	align-items: center;
+
+
+}
+
+.Box{
+	width: 10rem;
+}
+
+.Input{
+	width: 3rem;
+	text-align: center;
+	// background-color: red;
+}

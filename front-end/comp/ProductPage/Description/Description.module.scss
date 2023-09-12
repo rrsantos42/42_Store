@@ -1,0 +1,40 @@
+.header{
+	margin-bottom: 0px;
+	font-size: 40px;
+	font-family: 'Anton', sans-serif;
+}
+
+.descriptionContainer{
+	display: flex;
+	margin-top: 0%;
+	flex-direction: column;
+	width: 30%;
+	gap: 10px;
+}
+
+.description{
+	width: 50%;
+	font-family: f;
+	margin-top: 0px;
+	margin-bottom: 5%;
+	padding-top: 0px;
+	font-family: 'Merriweather', serif;
+
+}
+
+.price__description{
+	font-size: 30px;
+	font-family: 'Anton', sans-serif;
+	margin-top: 0px;
+}
+
+
+.cartBtn{
+	width: 40%;
+	margin-top: 50px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #00A3A5;
+    font-family: 'Anton', sans-serif;
+	font-size: 18px;
+}

@@ -1,0 +1,14 @@
+.navcontainer{
+	display: flex;
+	justify-items: flex-end;
+	align-items: center;
+	gap: 10px;
+	background-color:#1eb9ba;
+}
+
+@media only screen and (min-width: 600px) {
+	.navcontainer{
+        transform: scale(1.001)
+
+    }
+  }
